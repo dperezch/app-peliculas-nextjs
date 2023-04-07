@@ -2,6 +2,7 @@ import Head from "next/head";
 import Menu from "./Menu";
 import Encabezado from "./Encabezado";
 import { useRouter } from "next/router";
+import Footer from "./Footer";
 
 const Layout = ({ titulo, descripcion, autor, keywords, children }) => {
 
@@ -21,6 +22,8 @@ const Layout = ({ titulo, descripcion, autor, keywords, children }) => {
       {router.pathname === '/' && <Encabezado />}  {/* if verdadero */}
 
       <div className="container">{children}</div>
+
+      <Footer/>
     </div>
   );
 };
