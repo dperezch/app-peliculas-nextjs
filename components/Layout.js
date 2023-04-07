@@ -1,7 +1,12 @@
 import Head from "next/head";
 import Menu from "./Menu";
+import Encabezado from "./Encabezado";
+import { useRouter } from "next/router";
 
 const Layout = ({ titulo, descripcion, autor, keywords, children }) => {
+
+  const router = useRouter()
+
   return (
     <div>
       <Head>
@@ -12,6 +17,8 @@ const Layout = ({ titulo, descripcion, autor, keywords, children }) => {
       </Head>
 
       <Menu/>
+
+      {router.pathname === '/' && <Encabezado />}  {/* if verdadero */}
 
       <div className="container">{children}</div>
     </div>

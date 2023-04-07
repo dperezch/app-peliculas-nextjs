@@ -15,6 +15,11 @@ const Menu = () => {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" href="/about">
+                  Acerca de nosotros
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" href="/peliculas">
                   Lista de Películas
                 </Link>
