@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout'
+import Pelicula from '@/components/Pelicula';
 import { URL_API } from '@/config';
 
 
@@ -9,7 +10,7 @@ export default function Home({peliculas}) {
     <Layout>
       <h1 className='text-center mt-4' >Aplicación de Películas</h1>
       {peliculas.map((pelicula)=>(
-        <h3 key={pelicula.id}> {pelicula.titulo} </h3>
+        <Pelicula key={pelicula.id} pelicula={pelicula}/>
       ))}
       
     </Layout>
