@@ -18,17 +18,17 @@ export default function Home({peliculas}) {
 }
 
 //ejemplo 1: getServerSideProps
-export async function getServerSideProps(){
+/* export async function getServerSideProps(){
   const res = await fetch(`${URL_API}/api/peliculas`)
   const peliculas = await res.json()
 
   return{
     props: {peliculas}
   }
-}
+} */
 
 //ejemplo 2: getStaticProps
-/* export async function getStaticProps(){
+export async function getStaticProps(){
   const res = await fetch(`${URL_API}/api/peliculas`)
   const peliculas = await res.json()
 
@@ -36,4 +36,4 @@ export async function getServerSideProps(){
     props: {peliculas},
     revalidate: 2
   }
-} */
+}
