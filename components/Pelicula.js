@@ -24,7 +24,7 @@ const Pelicula = ({ pelicula }) => {
         </div>
         <div className="col-sm-3 pt-5">
           <Link href={`/peliculas/${pelicula.enlaceUrl}`}  className="btn btn-success">
-            Más información...
+            Más información... <i className="bi bi-arrow-right-square-fill"></i>
           </Link>
         </div>
       </div>
